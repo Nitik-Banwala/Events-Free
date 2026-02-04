@@ -58,7 +58,7 @@ export const Addpost = () => {
                             <p className="text-[16px] font-normal">Post event name</p>
                         </div>
                     </div>
-                    
+
                     <p className="mt-8 sm:mt-11 text-xl sm:text-2xl font-semibold">
                         Fusce adipiscing nunc et tellus eu, tristique <br className="hidden sm:block" />
                         sodales sit aliquet.
@@ -84,12 +84,12 @@ export const Addpost = () => {
 
                 <div className="flex flex-col sm:flex-row gap-6 sm:gap-7 justify-left">
                     <div className="flex flex-col gap-6">
-                        <img src="public/png/feedone.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 " />
-                        <img src="public/png/feedtwo.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 " />
+                        <img src="./png/feedone.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 " />
+                        <img src="./png/feedtwo.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 " />
                     </div>
                     <div className="flex flex-col gap-6">
-                        <img src="public/png/feedthree.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 " />
-                        <img src="public/png/feedfour.png" alt="" className="w-full lg:w-65 h-auto   2xl:w-75" />
+                        <img src="./png/feedthree.png" alt="" className="w-full lg:w-65 h-auto  2xl:w-75 " />
+                        <img src="./png/feedfour.png" alt="" className="w-full lg:w-65 h-auto   2xl:w-75" />
                     </div>
                 </div>
             </div>
