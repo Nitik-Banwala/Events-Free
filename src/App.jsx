@@ -5,6 +5,7 @@ import Home from "./components/Homepage /Home";
 import Events from "./components/Eventspage/Events";
 import Feed from "./components/Feedpage/Feed";
 import Navbar from "./components/common/Navbar";
+import Username from "./components/Username/Username";
 
 function App() {
   < Navbar />
@@ -18,7 +19,7 @@ function App() {
       )
     },
     {
-      path: "/EVENTS",
+      path: "/Username",
       element: (
         <>
           <Events />
@@ -31,6 +32,14 @@ function App() {
       element: (
         <>
           <Feed />
+        </>
+      )
+    },
+    {
+      path: "/Events",
+      element: (
+        <>
+          <Username/>
         </>
       )
     },

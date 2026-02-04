@@ -18,9 +18,8 @@ const P2section4 = () => {
             </div>
             <Addcomment />
         </div>
-
     );
-};
+}; 
 
 export const Addcomment = () => {
     const [input, setInput] = useState("");
@@ -56,8 +55,8 @@ export const Addcomment = () => {
                         type="text"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
-                        placeholder="           Add a new comment"
-                        className="w-[85%] p-3 border-none outline-none"
+                        placeholder=" Add a new comment"
+                        className="w-[85%] p-3 border-none outline-none pl-15 "
                     />
                     <button
                         onClick={addTask}
