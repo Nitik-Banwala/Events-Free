@@ -108,7 +108,7 @@ export const Addpost = () => {
                                       rounded-[20px] shadow-2xl
                                       hover:scale-[1.04] transition-transform duration-200
                                       justify-center items-center
-                                      w-40 max-[1535px]:mb-6 max-[1237px]:mb-12 max-[1234px]:mb-18 max-[1228px]:mb-25 max-[1213px]:mb-33 max-[1209px]:mb-39 max-[1207px]:mb-45 max-[1024px]:mb-0
+                                      w-40 max-[1535px]:mb-6 max-[1237px]:mb-12 max-[1234px]:mb-18 max-[1228px]:mb-25 max-[1213px]:mb-33 max-[1209px]:mb-39 max-[1207px]:mb-45 max-[1024px]:mb-5
                                   ">
                             <h1 className="text-3xl font-semibold">+15</h1>
                             <p className="text-[16px]">more</p>

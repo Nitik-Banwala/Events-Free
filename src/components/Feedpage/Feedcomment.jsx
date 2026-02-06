@@ -96,7 +96,7 @@ export const Addfeedcomment = ({ onAddComment, onDeleteComment }) => {
     return (
         <div className="w-full  max-w-330">
             <div className=" p-6">
-                <div className="flex gap-3 rounded-4xl border mb-8 border-[#9CA1BE]  p-2 shadow-sm">
+                <div className="flex gap-3 max-[750px]:hidden  rounded-4xl border mb-8 border-[#9CA1BE]  p-2 shadow-sm">
                     <img src="/png/P2section4img.png" alt="" className="absolute -mt-0.75 max-[600px]:-mt-1.5 -ml-0.75" />
                     <input
                         type="text"
@@ -111,6 +111,50 @@ export const Addfeedcomment = ({ onAddComment, onDeleteComment }) => {
                     >
                         Post Comment
                     </button>
+                </div>
+                <div className="w-full max-w-4xl hidden max-[750px]:flex mx-auto mb-8">
+                    <div
+                        className="
+                        flex flex-col w-full max-w-4xl gap-3 p-3 rounded-2xl border border-[#9CA1BE] shadow-sm bg-white
+
+                        xs:flex-row xs:items-center xs:gap-3
+                        xs:rounded-full xs:p-2
+                      "
+                     >
+                        <img
+                            src="/png/P2section4img.png"
+                            alt="comment"
+                            className="
+                          w-8 h-8 mx-auto
+
+                          xs:mx-0 xs:w-10 xs:h-10
+                        "
+                        />
+
+                        <input
+                            type="text"
+                            value={input}
+                            onChange={(e) => setInput(e.target.value)}
+                            placeholder="Write your comment here..."
+                            className="
+                          w-full px-4 py-3 text-sm outline-none border rounded-xl
+
+                          xs:flex-1 xs:border-none xs:rounded-none xs:py-2 xs:px-3
+                        "
+                        />
+
+                        <button
+                            onClick={addTask}
+                            className="
+                          w-full py-3 rounded-xl bg-[#2C49FE] text-white font-semibold
+                          hover:opacity-90 transition
+                  
+                          xs:w-auto xs:px-5 xs:py-2 xs:rounded-full
+                        "
+                        >
+                            Post Comment
+                        </button>
+                    </div>
                 </div>
                 <ul className="space-y-3  mb-6 ">
                     {tasks.map((task, index) => (

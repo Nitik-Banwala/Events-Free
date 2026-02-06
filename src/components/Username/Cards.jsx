@@ -78,7 +78,6 @@ const Cards = () => {
             bg-[#2C49FE] rounded-[28px]
             mt-6 text-sm sm:text-base
             text-white font-semibold
-            hover:bg-white hover:text-[#2C49FE]
             transition-all duration-300
           "
         />

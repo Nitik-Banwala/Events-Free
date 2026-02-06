@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import Button from "./Button";
 
 const Navbar = ({ style }) => {
@@ -41,11 +41,16 @@ const Navbar = ({ style }) => {
             <nav
                 className={`fixed top-0 left-0 w-full  backdrop-blur-[9px] p-4 z-50 ${navbarBgClass} ${style}`}>
                 <div className="flex justify-between items-center min-[500px]:px-6 px-0 max-w-330 mx-auto">
-                    <div className="flex items-center gap-2 sm:scale-100 scale-70">
-                        <img src="/png/logo.png" className="scale-80 max-[1300px]:-ml-10 max-[500px]:-ml-15 " alt="logo" />
+                    <div onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        className="flex items-center gap-2 sm:scale-100 flex-row scale-70">
+                        <Link to="/">
+                            <img src="/png/logo.png" className="scale-80 max-[1300px]:-ml-10 max-[500px]:-ml-15 " alt="logo" />
+                        </Link>
+                        <Link to="/">
                         <p className="text-4xl font-bold text-[#2c49fe]">
                             Events<span className="text-[#01c8ff]">Free</span>
-                        </p>
+                            </p>
+                        </Link>
                     </div>
                     <div className="hidden min-[1000px]:flex items-center gap-8">
                         <NavLink to="/" className={getLinkClass}>
@@ -66,7 +71,7 @@ const Navbar = ({ style }) => {
 
                         <Button
                             text="Log Out"
-                            style='py-[11px] px-[28px] bg-[#2C49FE] rounded-[28px] font-["Poppins",sans-serif] text-white font-semibold hover:text-[#2C49FE] hover:bg-white'/>
+                            style='py-[11px] px-[28px] bg-[#2C49FE] rounded-[28px] font-["Poppins",sans-serif] text-white font-semibold '/>
                     </div>
                 </div>
             </nav>
@@ -91,7 +96,7 @@ const Navbar = ({ style }) => {
                         </NavLink>
                     ))}
                     <Button
-                        text="Log Out" textColor="text-white" bgColor="bg-[#2C49FE]"  padding="px-6 py-2" rounded="rounded-[23px]" font="font-semibold" hover="hover:bg-white hover:text-[#2C49FE]" />
+                        text="Log Out" textColor="text-white" bgColor="bg-[#2C49FE]"  padding="px-6 py-2" rounded="rounded-[23px]" font="font-semibold" />
                 </div>
             </div>
         </>
