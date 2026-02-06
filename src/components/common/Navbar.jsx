@@ -34,7 +34,7 @@ const Navbar = ({ style }) => {
 
     const getLinkClass = ({ isActive }) =>
         `transition hover:font-semibold ${isActive
-            ? "text-black font-semibold"
+            ? "text-red-600 font-semibold"
             : isDarkMode || isScrolled
                 ? "text-black"
                 : "text-white"
@@ -43,15 +43,15 @@ const Navbar = ({ style }) => {
     return (
         <>
             <nav
-                className={`fixed top-0 left-0 w-full backdrop-blur-[9px] p-4 z-50 ${navbarBgClass} ${style}`}>
+                className={`fixed top-0 left-0 w-full  backdrop-blur-[9px] p-4 z-50 ${navbarBgClass} ${style}`}>
                 <div className="flex justify-between items-center min-[500px]:px-6 px-0 max-w-330 mx-auto">
                     <div className="flex items-center gap-2 sm:scale-100 scale-70">
-                        <img src="/png/logo.png" className="scale-80" alt="logo" />
+                        <img src="/png/logo.png" className="scale-80 -ml-10" alt="logo" />
                         <p className="text-4xl font-bold text-[#2c49fe]">
                             Events<span className="text-[#01c8ff]">Free</span>
                         </p>
                     </div>
-                    <div className="hidden min-[1200px]:flex items-center gap-8">
+                    <div className="hidden min-[1000px]:flex items-center gap-8">
                         <NavLink to="/" className={getLinkClass}>
                             HOME
                         </NavLink>
@@ -76,7 +76,7 @@ const Navbar = ({ style }) => {
             </nav>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="fixed top-6 right-6 flex flex-col gap-1 min-[1200px]:hidden z-1001">
+                className="fixed top-6 right-6 flex flex-col mt-5 gap-1 min-[1000px]:hidden z-1001">
                 <span className={`w-7 h-0.75 bg-[#2C49FECC] transition ${isOpen && "rotate-45 translate-y-1"}`}/> 
                 <span className={`w-7 h-0.75 bg-[#2C49FECC] transition ${isOpen && "hidden"}`} />
                 <span className={`w-7 h-0.75 bg-[#2C49FECC] transition ${isOpen && "-rotate-45 -translate-y-1"}`} />
